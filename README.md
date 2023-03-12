@@ -8,3 +8,4 @@ Kali ini akan membuat sebuah halaman web sederhana (bagian Frontend) sebuah peru
 
 
 ## Project ini merupakan hasil dari bootcamp yang diadakan oleh RevoU
+Masih belajar, belum sempurna
