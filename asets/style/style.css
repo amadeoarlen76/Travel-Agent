@@ -1,0 +1,638 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+body {font-family: 'Quicksand', sans-serif;}
+
+/* Desktop Styling */
+header{
+    width: 100%;
+    min-width: 36px;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.logo{
+    height:80px;
+    width: 90px;
+    padding-top: 0.3rem;
+    padding-left: 5rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    width: auto;
+    height: 45px;
+    box-sizing: border-box;
+}
+.menu-item{
+    padding: 6px 10px;
+    background-color: rgb(255, 255, 255);;
+    text-decoration: none;
+    outline: transparent;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Pdding = trbl */
+    padding: 0px 0px 60px;
+    row-gap: 0.7rem;
+    height: 60vh;
+    background-image: url("/asets/image/bali.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+}
+.hero-title > h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-title > h6{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    gap: 40px;
+}
+.about-contact{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.about-img{
+    height: 100%;
+    width: 600px;
+}
+.about-content{
+    width: 500px;
+}
+.content-caption >p{
+    color: gray;
+    font-style: italic;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.content-person > img{
+    border-radius: 50%;
+}
+.contact{
+    width: 40%;
+}
+
+.content-person{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.person-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.person-info > p{
+    color: gray;
+    font-style: italic;
+    margin-top: 10px;
+}
+.border{
+    border: 2px solid gray;
+    width: 100px;
+}
+
+/* Point Point informasi.... */
+.about-information{
+    width: 500px;
+}
+
+.information-title{
+    font-size: 30px;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.information-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.information-list > li{
+   display: flex; 
+   align-items: center;
+   gap: 20px;
+}
+
+.List-number{
+    background-color: rgb(180, 180, 180);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Point Point.... END */
+
+/* Card About */
+.card{
+  display:flex;
+  flex-direction: column;
+  gap:40px;
+  padding: 40px;
+  background-color: #f2f2f2;  
+}
+/* FORM MODE */
+
+.card-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-title > h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.card-title > p{
+    opacity: .6;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  input[type=text], input[type=email], select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 4px;
+  }
+  select{
+    cursor: pointer;
+  }
+  .kirim{
+    border: none;
+    font-size: 18px;
+    background-color: #29323D;
+    color: white;
+    height: 10vh;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  .kirim:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+/* FORM MODE  END*/
+
+
+/* Bagian call us */
+.call-section{
+    display: flex;
+    padding: 4rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 4px solid #eee;
+    border-bottom: 4px solid #eee;
+    gap: 40px;
+}
+
+.call-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+.call-title{
+    color: black;
+    font-weight: 500;
+    font-size: 40px;
+}
+.call-subtitle{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    opacity: 0.6;
+    gap: 20px;
+}
+.tombol{
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+    padding: 1rem 4rem;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.tombol:hover{
+    background-color: #000000;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+/* CALL US END */
+
+/* Bagian Produk */
+.package{
+    height: 700px;
+}
+.package-title{
+    margin: 30px 1px 1px 1px;
+    display: flex;
+    justify-content: center;
+    background-color: #EDF0F4;
+     align-items: center;
+     padding: 50px;
+     row-gap: 35px;
+}
+
+.package-title > h1{
+    font-size: 50px; 
+}
+.package-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 32px;
+    gap: 90px;
+}
+
+.package-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding trbl */
+    padding: 0px 32px 0px;
+}
+.package-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: #EDF0F4;
+    border-radius: 50%;
+}
+.package-unit{
+    display: inline-grid;
+    gap: 30px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+.package-description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0.8 rem 0;
+}
+.package-description >h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.package-description > a{
+    color: gray;
+    font-size: 2 rem;
+    opacity: 0.9;
+}
+
+/* BAGIAN FOOTER, JANGAN DIUBAH!! */
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: aqua; */
+    font-weight: bold;
+ }
+ footer> .logos{
+    
+    /* Padding: atas kanan bawah kiri*/
+    padding: 30px 10px 15px 14px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.block1{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.block1 >p{
+        /* Padding: atas kanan bawah kiri*/
+        padding: 5px 10px 3px 10px;
+}
+.block2{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.block2 >p{
+        /* Padding: atas kanan bawah kiri*/
+        padding: 0px 10px 10px 10px;
+}
+
+@media screen and (max-width: 650px){
+    html, body {
+        margin: 0;
+        display: block;
+        max-width: auto;
+        overflow-x: hidden;
+    }
+    .navbar {
+        padding: 0 1rem;
+        height: 8vh;
+    }
+    .logo{
+        padding-left: 0rem;
+        height:50px;
+        width: 60px;
+    }
+    .hero-title{
+        margin-bottom: 30px;
+    }
+    .hero-title > h1{
+        font-size: 28px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .hero-title > h6{
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+    .logo{
+        height:80px;
+        width: 90px;
+    }
+    .menu-item{
+        font-size: 16px;
+        gap: 0px;
+        padding: 2px 4px;
+    }
+    .about{
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+    }
+    .about-contact{
+        flex-direction: column;
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 350px;
+        align-items: center;
+    }
+    .content-caption{
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: -10px;
+    }
+    .content-person{
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5rem;
+    }
+    .border{
+        display: block;
+    }
+    .about-information{
+        padding-left: 12rem;
+    }
+    .information-title{
+        align-items: center;
+        font-size: 18px;
+    }
+    .information-list{
+        font-size: 12px;
+        gap: 20px;
+    }
+    .information-list > li{
+        font-size: 12px;
+       gap: 20px;
+    }
+    /* form */
+    .contact{
+        width: 100%;
+    }
+    .package{
+        height: 1100px;
+    }
+    .package-row{
+        flex-direction: column;
+    }
+    .package-information{
+        padding: 60px 32px;
+        gap: 50px;
+    }
+    .package-title{
+        text-align: center;
+    }
+    .call-title{
+        text-align: center;
+    }
+    .call-section{
+        margin-top: 8rem;
+    } 
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .hero-title{
+        margin-bottom: 30px;
+    }
+    .hero-title > h1{
+        font-size: 28px;
+        font-weight: 700;
+        color: white;
+    }
+    
+    .hero-title > h6{
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+    .logo{
+        height:80px;
+        width: 90px;
+    }
+    .menu-item{
+        font-size: 16px;
+        gap: 0px;
+        padding: 2px 4px;
+    }
+    .about{
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+    }
+    .about-contact{
+        flex-direction: column;
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 350px;
+        align-items: center;
+    }
+    .content-caption{
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: -10px;
+    }
+    .content-person{
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5rem;
+    }
+    .border{
+        display: block;
+    }
+    .about-information{
+        padding-left: 12rem;
+    }
+    .information-title{
+        align-items: center;
+        font-size: 18px;
+    }
+    .information-list{
+        font-size: 12px;
+        gap: 20px;
+    }
+    .information-list > li{
+        font-size: 12px;
+       gap: 20px;
+    }
+    /* form */
+    .contact{
+        width: 100%;
+    }
+    .package{
+        height: 1100px;
+    }
+    .package-row{
+        flex-direction: column;
+    }
+    .package-information{
+        padding: 60px 32px;
+        gap: 50px;
+    }
+    .package-title{
+        text-align: center;
+    }
+    .call-title{
+        text-align: center;
+    }
+}  
+
+@media screen and (max-width:370px) {
+    .hero-title >h1 {
+        text-align: center;
+    }
+    .call-section{
+        margin-top: 18rem;
+    }
+}
+
+@media screen and (min-width: 300px){
+    html, body{
+        overflow-x: hidden;
+    }
+}
